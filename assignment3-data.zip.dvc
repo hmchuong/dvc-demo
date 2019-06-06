@@ -1,0 +1,8 @@
+md5: 0244bf30952bf537e9b72a5c0ca655ee
+wdir: .
+outs:
+- md5: ca2e2bf52a1935df33bf4eabffb6d60b
+  path: assignment3-data.zip
+  cache: true
+  metric: false
+  persist: false
