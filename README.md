@@ -81,8 +81,10 @@ Checkout version 1.0
 ```bash
 git checkout 1.0 && dvc pull && dvc checkout
 ```
-You willl see the file `sample_submission.csv` appear again
+You will see the file `sample_submission.csv` again
+
 Checkout version 1.1
 ```bash
 git checkout 1.1 && dvc pull && dvc checkout
 ```
+The file `sample_submission.csv` disappears
