@@ -1,4 +1,0 @@
-['remote "gcs"']
-url = gs://vietai-test/dvc-demo
-[core]
-remote = gcs

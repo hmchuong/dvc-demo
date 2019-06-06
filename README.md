@@ -72,7 +72,7 @@ git push --tags origin master
 dvc push
 ```
 
-### Checkout version 1.0
+### Checkout versions
 List out all versions
 ```bash
 git for-each-ref --sort=-taggerdate --format '%(refname:short)' refs/tags
@@ -80,4 +80,9 @@ git for-each-ref --sort=-taggerdate --format '%(refname:short)' refs/tags
 Checkout version 1.0
 ```bash
 git checkout 1.0 && dvc pull && dvc checkout
+```
+You willl see the file `sample_submission.csv` appear again
+Checkout version 1.1
+```bash
+git checkout 1.1 && dvc pull && dvc checkout
 ```
