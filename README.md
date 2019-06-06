@@ -62,6 +62,7 @@ dvc push
 We will remove the `sample_submission.csv` and make the new dataset version
 ```bash
 rm data/sample_submission.csv
+dvc add data
 ```
 ```bash
 git add -A
@@ -69,4 +70,14 @@ git commit -m "remove submission file"
 git tag 1.1
 git push --tags origin master
 dvc push
+```
+
+### Checkout version 1.0
+List out all versions
+```bash
+git for-each-ref --sort=-taggerdate --format '%(refname:short)' refs/tags
+```
+Checkout version 1.0
+```bash
+git checkout 1.0 && dvc pull && dvc checkout
 ```
